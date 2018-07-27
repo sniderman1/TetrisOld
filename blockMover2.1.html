@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Block Mover 2.1</title>
+	<link rel="stylesheet" type="text/css" href="blockMover2.1.css">
+</head>
+<body>
+
+<h1>Block Mover 2.1</h1>
+
+<div id="buttons">
+<button id="startBtn">Start</button>
+<button id="restartBtn">Restart</button>
+</div>
+
+<div class="board">
+
+	<div>
+		<div id="container0square0"></div>
+		<div id="container0squ1"></div>
+		<div id="container0squ2"></div>
+		<div id="container0squ3"></div>
+		<div id="container0squ4"></div>
+		<div id="container0squ5"></div>
+		<div id="container0squ6"></div>
+		<div id="container0squ7"></div>
+		<div id="container0squ8"></div>
+		<div id="container0squ9"></div>
+		<div id="container0squ10"></div>
+		<div id="container0squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row1square0"></div>
+		<div class="square" id="row1squ1"></div>
+		<div class="square" id="row1squ2"></div>
+		<div class="square" id="row1squ3"></div>
+		<div class="square" id="row1squ4"></div>
+		<div class="square" id="row1squ5"></div>
+		<div class="square" id="row1squ6"></div>
+		<div class="square" id="row1squ7"></div>
+		<div class="square" id="row1squ8"></div>
+		<div class="square" id="row1squ9"></div>
+		<div class="square" id="row1squ10"></div>
+		<div id="row1squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row2square0"></div>
+		<div class="square" id="row2squ1"></div>
+		<div class="square" id="row2squ2"></div>
+		<div class="square" id="row2squ3"></div>
+		<div class="square" id="row2squ4"></div>
+		<div class="square" id="row2squ5"></div>
+		<div class="square" id="row2squ6"></div>
+		<div class="square" id="row2squ7"></div>
+		<div class="square" id="row2squ8"></div>
+		<div class="square" id="row2squ9"></div>
+		<div class="square" id="row2squ10"></div>
+		<div id="row2squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row3square0"></div>
+		<div class="square" id="row3squ1"></div>
+		<div class="square" id="row3squ2"></div>
+		<div class="square" id="row3squ3"></div>
+		<div class="square" id="row3squ4"></div>
+		<div class="square" id="row3squ5"></div>
+		<div class="square" id="row3squ6"></div>
+		<div class="square" id="row3squ7"></div>
+		<div class="square" id="row3squ8"></div>
+		<div class="square" id="row3squ9"></div>
+		<div class="square" id="row3squ10"></div>
+		<div id="row3squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row4square0"></div>
+		<div class="square" id="row4squ1"></div>
+		<div class="square" id="row4squ2"></div>
+		<div class="square" id="row4squ3"></div>
+		<div class="square" id="row4squ4"></div>
+		<div class="square" id="row4squ5"></div>
+		<div class="square" id="row4squ6"></div>
+		<div class="square" id="row4squ7"></div>
+		<div class="square" id="row4squ8"></div>
+		<div class="square" id="row4squ9"></div>
+		<div class="square" id="row4squ10"></div>
+		<div id="row4squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row5square0"></div>
+		<div class="square" id="row5squ1"></div>
+		<div class="square" id="row5squ2"></div>
+		<div class="square" id="row5squ3"></div>
+		<div class="square" id="row5squ4"></div>
+		<div class="square" id="row5squ5"></div>
+		<div class="square" id="row5squ6"></div>
+		<div class="square" id="row5squ7"></div>
+		<div class="square" id="row5squ8"></div>
+		<div class="square" id="row5squ9"></div>
+		<div class="square" id="row5squ10"></div>
+		<div id="row5squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row6square0"></div>
+		<div class="square" id="row6squ1"></div>
+		<div class="square" id="row6squ2"></div>
+		<div class="square" id="row6squ3"></div>
+		<div class="square" id="row6squ4"></div>
+		<div class="square" id="row6squ5"></div>
+		<div class="square" id="row6squ6"></div>
+		<div class="square" id="row6squ7"></div>
+		<div class="square" id="row6squ8"></div>
+		<div class="square" id="row6squ9"></div>
+		<div class="square" id="row6squ10"></div>
+		<div id="row6squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row7square0"></div>
+		<div class="square" id="row7squ1"></div>
+		<div class="square" id="row7squ2"></div>
+		<div class="square" id="row7squ3"></div>
+		<div class="square" id="row7squ4"></div>
+		<div class="square" id="row7squ5"></div>
+		<div class="square" id="row7squ6"></div>
+		<div class="square" id="row7squ7"></div>
+		<div class="square" id="row7squ8"></div>
+		<div class="square" id="row7squ9"></div>
+		<div class="square" id="row7squ10"></div>
+		<div id="row7squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row8square0"></div>
+		<div class="square" id="row8squ1"></div>
+		<div class="square" id="row8squ2"></div>
+		<div class="square" id="row8squ3"></div>
+		<div class="square" id="row8squ4"></div>
+		<div class="square" id="row8squ5"></div>
+		<div class="square" id="row8squ6"></div>
+		<div class="square" id="row8squ7"></div>
+		<div class="square" id="row8squ8"></div>
+		<div class="square" id="row8squ9"></div>
+		<div class="square" id="row8squ10"></div>
+		<div id="row8squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row9square0"></div>
+		<div class="square" id="row9squ1"></div>
+		<div class="square" id="row9squ2"></div>
+		<div class="square" id="row9squ3"></div>
+		<div class="square" id="row9squ4"></div>
+		<div class="square" id="row9squ5"></div>
+		<div class="square" id="row9squ6"></div>
+		<div class="square" id="row9squ7"></div>
+		<div class="square" id="row9squ8"></div>
+		<div class="square" id="row9squ9"></div>
+		<div class="square" id="row9squ10"></div>
+		<div id="row9squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row10square0"></div>
+		<div class="square" id="row10squ1"></div>
+		<div class="square" id="row10squ2"></div>
+		<div class="square" id="row10squ3"></div>
+		<div class="square" id="row10squ4"></div>
+		<div class="square" id="row10squ5"></div>
+		<div class="square" id="row10squ6"></div>
+		<div class="square" id="row10squ7"></div>
+		<div class="square" id="row10squ8"></div>
+		<div class="square" id="row10squ9"></div>
+		<div class="square" id="row10squ10"></div>
+		<div id="row10squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row11square0"></div>
+		<div class="square" id="row11squ1"></div>
+		<div class="square" id="row11squ2"></div>
+		<div class="square" id="row11squ3"></div>
+		<div class="square" id="row11squ4"></div>
+		<div class="square" id="row11squ5"></div>
+		<div class="square" id="row11squ6"></div>
+		<div class="square" id="row11squ7"></div>
+		<div class="square" id="row11squ8"></div>
+		<div class="square" id="row11squ9"></div>
+		<div class="square" id="row11squ10"></div>
+		<div id="row11squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row12square0"></div>
+		<div class="square" id="row12squ1"></div>
+		<div class="square" id="row12squ2"></div>
+		<div class="square" id="row12squ3"></div>
+		<div class="square" id="row12squ4"></div>
+		<div class="square" id="row12squ5"></div>
+		<div class="square" id="row12squ6"></div>
+		<div class="square" id="row12squ7"></div>
+		<div class="square" id="row12squ8"></div>
+		<div class="square" id="row12squ9"></div>
+		<div class="square" id="row12squ10"></div>
+		<div id="row12squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row13square0"></div>
+		<div class="square" id="row13squ1"></div>
+		<div class="square" id="row13squ2"></div>
+		<div class="square" id="row13squ3"></div>
+		<div class="square" id="row13squ4"></div>
+		<div class="square" id="row13squ5"></div>
+		<div class="square" id="row13squ6"></div>
+		<div class="square" id="row13squ7"></div>
+		<div class="square" id="row13squ8"></div>
+		<div class="square" id="row13squ9"></div>
+		<div class="square" id="row13squ10"></div>
+		<div id="row13squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row14square0"></div>
+		<div class="square" id="row14squ1"></div>
+		<div class="square" id="row14squ2"></div>
+		<div class="square" id="row14squ3"></div>
+		<div class="square" id="row14squ4"></div>
+		<div class="square" id="row14squ5"></div>
+		<div class="square" id="row14squ6"></div>
+		<div class="square" id="row14squ7"></div>
+		<div class="square" id="row14squ8"></div>
+		<div class="square" id="row14squ9"></div>
+		<div class="square" id="row14squ10"></div>
+		<div id="row14squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row15square0"></div>
+		<div class="square" id="row15squ1"></div>
+		<div class="square" id="row15squ2"></div>
+		<div class="square" id="row15squ3"></div>
+		<div class="square" id="row15squ4"></div>
+		<div class="square" id="row15squ5"></div>
+		<div class="square" id="row15squ6"></div>
+		<div class="square" id="row15squ7"></div>
+		<div class="square" id="row15squ8"></div>
+		<div class="square" id="row15squ9"></div>
+		<div class="square" id="row15squ10"></div>
+		<div id="row15squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row16square0"></div>
+		<div class="square" id="row16squ1"></div>
+		<div class="square" id="row16squ2"></div>
+		<div class="square" id="row16squ3"></div>
+		<div class="square" id="row16squ4"></div>
+		<div class="square" id="row16squ5"></div>
+		<div class="square" id="row16squ6"></div>
+		<div class="square" id="row16squ7"></div>
+		<div class="square" id="row16squ8"></div>
+		<div class="square" id="row16squ9"></div>
+		<div class="square" id="row16squ10"></div>
+		<div id="row16squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row17square0"></div>
+		<div class="square" id="row17squ1"></div>
+		<div class="square" id="row17squ2"></div>
+		<div class="square" id="row17squ3"></div>
+		<div class="square" id="row17squ4"></div>
+		<div class="square" id="row17squ5"></div>
+		<div class="square" id="row17squ6"></div>
+		<div class="square" id="row17squ7"></div>
+		<div class="square" id="row17squ8"></div>
+		<div class="square" id="row17squ9"></div>
+		<div class="square" id="row17squ10"></div>
+		<div id="row17squ11"></div>
+	</div>
+
+	<div class="container">
+		<div id="row18square0"></div>
+		<div class="square" id="row18squ1"></div>
+		<div class="square" id="row18squ2"></div>
+		<div class="square" id="row18squ3"></div>
+		<div class="square" id="row18squ4"></div>
+		<div class="square" id="row18squ5"></div>
+		<div class="square" id="row18squ6"></div>
+		<div class="square" id="row18squ7"></div>
+		<div class="square" id="row18squ8"></div>
+		<div class="square" id="row18squ9"></div>
+		<div class="square" id="row18squ10"></div>
+		<div id="row18squ11"></div>		
+	</div>
+
+	<div class="container">
+		<div id="row19squ1"></div>
+		<div id="row19squ2"></div>
+		<div id="row19squ3"></div>
+		<div id="row19squ4"></div>
+		<div id="row19squ5"></div>
+		<div id="row19squ6"></div>
+		<div id="row19squ7"></div>
+		<div id="row19squ8"></div>
+		<div id="row19squ9"></div>
+		<div id="row19squ10"></div>
+	</div>		
+
+
+</div>
+
+
+
+
+<script type="text/javascript" src="blockMover2.1.js"></script>
+</body>
+</html>

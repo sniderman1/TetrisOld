@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tetris</title>
+	<link rel="stylesheet" type="text/css" href="Tetris.css">
+</head>
+<body>
+
+<h1>Tetris</h1>
+
+<div id="buttons">
+<button id="startBtn">Start</button>
+<button id="restartBtn">Restart</button>
+</div>
+
+<div class="board">
+
+	<div>
+		<div id="container0square0"></div>
+		<div id="container0square1"></div>
+		<div id="container0square2"></div>
+		<div id="container0square3"></div>
+		<div id="container0square4"></div>
+		<div id="container0square5"></div>
+		<div id="container0square6"></div>
+		<div id="container0square7"></div>
+		<div id="container0square8"></div>
+		<div id="container0square9"></div>
+		<div id="container0square10"></div>
+		<div id="container0square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container1square0"></div>
+		<div class="square" id="container1square1"></div>
+		<div class="square" id="container1square2"></div>
+		<div class="square" id="container1square3"></div>
+		<div class="square" id="container1square4"></div>
+		<div class="square" id="container1square5"></div>
+		<div class="square" id="container1square6"></div>
+		<div class="square" id="container1square7"></div>
+		<div class="square" id="container1square8"></div>
+		<div class="square" id="container1square9"></div>
+		<div class="square" id="container1square10"></div>
+		<div id="container1square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container2square0"></div>
+		<div class="square" id="container2square1"></div>
+		<div class="square" id="container2square2"></div>
+		<div class="square" id="container2square3"></div>
+		<div class="square" id="container2square4"></div>
+		<div class="square" id="container2square5"></div>
+		<div class="square" id="container2square6"></div>
+		<div class="square" id="container2square7"></div>
+		<div class="square" id="container2square8"></div>
+		<div class="square" id="container2square9"></div>
+		<div class="square" id="container2square10"></div>
+		<div id="container2square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container3square0"></div>
+		<div class="square" id="container3square1"></div>
+		<div class="square" id="container3square2"></div>
+		<div class="square" id="container3square3"></div>
+		<div class="square" id="container3square4"></div>
+		<div class="square" id="container3square5"></div>
+		<div class="square" id="container3square6"></div>
+		<div class="square" id="container3square7"></div>
+		<div class="square" id="container3square8"></div>
+		<div class="square" id="container3square9"></div>
+		<div class="square" id="container3square10"></div>
+		<div id="container3square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container4square0"></div>
+		<div class="square" id="container4square1"></div>
+		<div class="square" id="container4square2"></div>
+		<div class="square" id="container4square3"></div>
+		<div class="square" id="container4square4"></div>
+		<div class="square" id="container4square5"></div>
+		<div class="square" id="container4square6"></div>
+		<div class="square" id="container4square7"></div>
+		<div class="square" id="container4square8"></div>
+		<div class="square" id="container4square9"></div>
+		<div class="square" id="container4square10"></div>
+		<div id="container4square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container5square0"></div>
+		<div class="square" id="container5square1"></div>
+		<div class="square" id="container5square2"></div>
+		<div class="square" id="container5square3"></div>
+		<div class="square" id="container5square4"></div>
+		<div class="square" id="container5square5"></div>
+		<div class="square" id="container5square6"></div>
+		<div class="square" id="container5square7"></div>
+		<div class="square" id="container5square8"></div>
+		<div class="square" id="container5square9"></div>
+		<div class="square" id="container5square10"></div>
+		<div id="container5square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container6square0"></div>
+		<div class="square" id="container6square1"></div>
+		<div class="square" id="container6square2"></div>
+		<div class="square" id="container6square3"></div>
+		<div class="square" id="container6square4"></div>
+		<div class="square" id="container6square5"></div>
+		<div class="square" id="container6square6"></div>
+		<div class="square" id="container6square7"></div>
+		<div class="square" id="container6square8"></div>
+		<div class="square" id="container6square9"></div>
+		<div class="square" id="container6square10"></div>
+		<div id="container6square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container7square0"></div>
+		<div class="square" id="container7square1"></div>
+		<div class="square" id="container7square2"></div>
+		<div class="square" id="container7square3"></div>
+		<div class="square" id="container7square4"></div>
+		<div class="square" id="container7square5"></div>
+		<div class="square" id="container7square6"></div>
+		<div class="square" id="container7square7"></div>
+		<div class="square" id="container7square8"></div>
+		<div class="square" id="container7square9"></div>
+		<div class="square" id="container7square10"></div>
+		<div id="container7square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container8square0"></div>
+		<div class="square" id="container8square1"></div>
+		<div class="square" id="container8square2"></div>
+		<div class="square" id="container8square3"></div>
+		<div class="square" id="container8square4"></div>
+		<div class="square" id="container8square5"></div>
+		<div class="square" id="container8square6"></div>
+		<div class="square" id="container8square7"></div>
+		<div class="square" id="container8square8"></div>
+		<div class="square" id="container8square9"></div>
+		<div class="square" id="container8square10"></div>
+		<div id="container8square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container9square0"></div>
+		<div class="square" id="container9square1"></div>
+		<div class="square" id="container9square2"></div>
+		<div class="square" id="container9square3"></div>
+		<div class="square" id="container9square4"></div>
+		<div class="square" id="container9square5"></div>
+		<div class="square" id="container9square6"></div>
+		<div class="square" id="container9square7"></div>
+		<div class="square" id="container9square8"></div>
+		<div class="square" id="container9square9"></div>
+		<div class="square" id="container9square10"></div>
+		<div id="container9square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container10square0"></div>
+		<div class="square" id="container10square1"></div>
+		<div class="square" id="container10square2"></div>
+		<div class="square" id="container10square3"></div>
+		<div class="square" id="container10square4"></div>
+		<div class="square" id="container10square5"></div>
+		<div class="square" id="container10square6"></div>
+		<div class="square" id="container10square7"></div>
+		<div class="square" id="container10square8"></div>
+		<div class="square" id="container10square9"></div>
+		<div class="square" id="container10square10"></div>
+		<div id="container10square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container11square0"></div>
+		<div class="square" id="container11square1"></div>
+		<div class="square" id="container11square2"></div>
+		<div class="square" id="container11square3"></div>
+		<div class="square" id="container11square4"></div>
+		<div class="square" id="container11square5"></div>
+		<div class="square" id="container11square6"></div>
+		<div class="square" id="container11square7"></div>
+		<div class="square" id="container11square8"></div>
+		<div class="square" id="container11square9"></div>
+		<div class="square" id="container11square10"></div>
+		<div id="container11square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container12square0"></div>
+		<div class="square" id="container12square1"></div>
+		<div class="square" id="container12square2"></div>
+		<div class="square" id="container12square3"></div>
+		<div class="square" id="container12square4"></div>
+		<div class="square" id="container12square5"></div>
+		<div class="square" id="container12square6"></div>
+		<div class="square" id="container12square7"></div>
+		<div class="square" id="container12square8"></div>
+		<div class="square" id="container12square9"></div>
+		<div class="square" id="container12square10"></div>
+		<div id="container12square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container13square0"></div>
+		<div class="square" id="container13square1"></div>
+		<div class="square" id="container13square2"></div>
+		<div class="square" id="container13square3"></div>
+		<div class="square" id="container13square4"></div>
+		<div class="square" id="container13square5"></div>
+		<div class="square" id="container13square6"></div>
+		<div class="square" id="container13square7"></div>
+		<div class="square" id="container13square8"></div>
+		<div class="square" id="container13square9"></div>
+		<div class="square" id="container13square10"></div>
+		<div id="container13square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container14square0"></div>
+		<div class="square" id="container14square1"></div>
+		<div class="square" id="container14square2"></div>
+		<div class="square" id="container14square3"></div>
+		<div class="square" id="container14square4"></div>
+		<div class="square" id="container14square5"></div>
+		<div class="square" id="container14square6"></div>
+		<div class="square" id="container14square7"></div>
+		<div class="square" id="container14square8"></div>
+		<div class="square" id="container14square9"></div>
+		<div class="square" id="container14square10"></div>
+		<div id="container14square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container15square0"></div>
+		<div class="square" id="container15square1"></div>
+		<div class="square" id="container15square2"></div>
+		<div class="square" id="container15square3"></div>
+		<div class="square" id="container15square4"></div>
+		<div class="square" id="container15square5"></div>
+		<div class="square" id="container15square6"></div>
+		<div class="square" id="container15square7"></div>
+		<div class="square" id="container15square8"></div>
+		<div class="square" id="container15square9"></div>
+		<div class="square" id="container15square10"></div>
+		<div id="container15square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container16square0"></div>
+		<div class="square" id="container16square1"></div>
+		<div class="square" id="container16square2"></div>
+		<div class="square" id="container16square3"></div>
+		<div class="square" id="container16square4"></div>
+		<div class="square" id="container16square5"></div>
+		<div class="square" id="container16square6"></div>
+		<div class="square" id="container16square7"></div>
+		<div class="square" id="container16square8"></div>
+		<div class="square" id="container16square9"></div>
+		<div class="square" id="container16square10"></div>
+		<div id="container16square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container17square0"></div>
+		<div class="square" id="container17square1"></div>
+		<div class="square" id="container17square2"></div>
+		<div class="square" id="container17square3"></div>
+		<div class="square" id="container17square4"></div>
+		<div class="square" id="container17square5"></div>
+		<div class="square" id="container17square6"></div>
+		<div class="square" id="container17square7"></div>
+		<div class="square" id="container17square8"></div>
+		<div class="square" id="container17square9"></div>
+		<div class="square" id="container17square10"></div>
+		<div id="container17square11"></div>
+	</div>
+
+	<div class="container">
+		<div id="container18square0"></div>
+		<div class="square" id="container18square1"></div>
+		<div class="square" id="container18square2"></div>
+		<div class="square" id="container18square3"></div>
+		<div class="square" id="container18square4"></div>
+		<div class="square" id="container18square5"></div>
+		<div class="square" id="container18square6"></div>
+		<div class="square" id="container18square7"></div>
+		<div class="square" id="container18square8"></div>
+		<div class="square" id="container18square9"></div>
+		<div class="square" id="container18square10"></div>
+		<div id="container18square11"></div>		
+	</div>
+
+	<div class="container">
+		<div id="container19square1"></div>
+		<div id="container19square2"></div>
+		<div id="container19square3"></div>
+		<div id="container19square4"></div>
+		<div id="container19square5"></div>
+		<div id="container19square6"></div>
+		<div id="container19square7"></div>
+		<div id="container19square8"></div>
+		<div id="container19square9"></div>
+		<div id="container19square10"></div>
+	</div>		
+
+
+</div>
+
+
+
+
+<script type="text/javascript" src="Tetris.js"></script>
+</body>
+</html>

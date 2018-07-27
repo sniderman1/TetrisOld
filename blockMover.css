@@ -1,0 +1,44 @@
+h1{
+	text-align: center;
+}
+
+button{
+	margin:0px auto;
+	width: 10%;
+}
+
+#buttons{
+	margin: auto;
+    width: 50%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.square{
+
+	height: 25px;
+	width: 25px;
+	border: solid 1px rgb(0,0,0) ;
+	background: #fb2c17;
+	float: right;
+}
+
+.squareWhite{
+	background: white;
+}
+
+.squareGreen{
+	background: green;
+}
+
+.container{
+
+	width: 275px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.board{
+	width: 17%;
+	margin:0px auto;
+}
